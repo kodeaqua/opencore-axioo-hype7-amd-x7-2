@@ -1,0 +1,29 @@
+diff --git a/Resources/PinConfigs.kext/Contents/Info.plist b/Resources/PinConfigs.kext/Contents/Info.plist
+index e8d888e..0e7842b 100755
+--- a/Resources/PinConfigs.kext/Contents/Info.plist
++++ b/Resources/PinConfigs.kext/Contents/Info.plist
+@@ -11024,6 +11024,24 @@
+ 					<key>WakeVerbReinit</key>
+ 					<true/>
+ 				</dict>
++				<dict>
++					<key>AFGLowPowerState</key>
++					<data>AwAAAA==</data>
++					<key>Codec</key>
++					<string>Conexant SN6140 for Axioo Hype 7 AMD X7-2 by kodeaqua</string>
++					<key>CodecID</key>
++					<integer>351346567</integer>
++					<key>ConfigData</key>
++					<data>AWccQAFnHUABZx4hAWcfBAFnDAIBdxwQAXcdMQF3HhcBdx+QAXcMAgGXHCABlx2QAZceoQGXHwQ=</data>
++					<key>FuncGroup</key>
++					<integer>1</integer>
++					<key>LayoutID</key>
++					<integer>42</integer>
++					<key>WakeConfigData</key>
++					<data>AXcMAgFnDAI=</data>
++					<key>WakeVerbReinit</key>
++					<true/>
++				</dict>
+ 			</array>
+ 			<key>IOClass</key>
+ 			<string>AppleALC</string>

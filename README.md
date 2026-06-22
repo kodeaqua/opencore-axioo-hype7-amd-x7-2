@@ -30,6 +30,10 @@ Stable OpenCore configuration build.
 3. **[OPTIONAL]** Download and move [AMD Power Gadget.app](https://github.com/trulyspinach/SMCAMDProcessor/releases/latest) to **Applications** then open. You'll see the security prompt, don't forget to allow it at the **Settings** -> **Privacy & Security**.
 4. **[MANDATORY|TAHOE]** Follow this [guide](https://github.com/Mirone/MyKextInstaller) to restore audio.
 
+## WARNING
+1. Please complete the **[MANDATORY]** steps in the **Post-Install** section!
+2. Do not change the shipped AppleALC.kext, otherwise your audio will not work. Wait until I submit the patch to the AppleALC repository.
+
 ## Configuration Details
 - **SMBIOS**: `MacBookPro16,2`
 - **Audio Layout ID**: `42` ~~(WIP)~~

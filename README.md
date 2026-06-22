@@ -19,6 +19,7 @@ Stable OpenCore configuration build.
 - iServices (iMessage, FaceTime, iCloud) and OTA updates
 - Ethernet via USB Type-C to Gigabit Ethernet Controller
 - Audio
+- Sleep, Wake, Power Management
 
 ## What's not working (or partially)
 - Touchpad/Trackpad (sometimes it stopped working)
@@ -29,6 +30,7 @@ Stable OpenCore configuration build.
 2. **[MANDATORY]** Download and install [Starskiff](https://github.com/thegwchr/Starskiff) then open, go to **Settings** -> **General** -> **Login Items & Extensions** -> Add the **Starskiff** to Open at Login.
 3. **[OPTIONAL]** Download and move [AMD Power Gadget.app](https://github.com/trulyspinach/SMCAMDProcessor/releases/latest) to **Applications** then open. You'll see the security prompt, don't forget to allow it at the **Settings** -> **Privacy & Security**.
 4. **[MANDATORY|TAHOE]** Follow this [guide](https://github.com/Mirone/MyKextInstaller) to restore audio.
+5. **[MANDATORY]** Adjust your timezone from Terminal, type `sudo systemsetup -settimezone Asia/Jakarta` then `Enter`. Change `Asia/Jakarta` to your timezone.
 
 ## WARNING
 1. Please complete the **[MANDATORY]** steps in the **Post-Install** section!

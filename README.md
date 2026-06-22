@@ -18,10 +18,11 @@ Stable OpenCore configuration build.
 - Webcam and Microphone
 - iServices (iMessage, FaceTime, iCloud) and OTA updates
 - Ethernet via USB Type-C to Gigabit Ethernet Controller
+- Audio
 
 ## What's not working (or partially)
 - Touchpad/Trackpad (sometimes it stopped working)
-- Audio (WIP)
+- ~~Audio (WIP)~~
 
 ## Post-Install
 1. You'll get a gray background with spinning beach ball, go to **Recovery** then follow this [workaround](https://github.com/ChefKissInc/NootedRed/discussions/430) (or [direct](https://github.com/ChefKissInc/NootedRed/issues/235#issuecomment-4567109847)).
@@ -30,7 +31,7 @@ Stable OpenCore configuration build.
 
 ## Configuration Details
 - **SMBIOS**: `MacBookPro16,2`
-- **Audio Layout ID**: `?` (WIP)
+- **Audio Layout ID**: `42` ~~(WIP)~~
 - **Bootloader**: OpenCore
 - **SecureBootModel**: `Disabled`
 

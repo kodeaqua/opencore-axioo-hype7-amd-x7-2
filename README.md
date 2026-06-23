@@ -14,15 +14,16 @@ Stable OpenCore configuration build.
 ## What's Working
 - Graphics (See Post-Install#1)
 - Wi-Fi via [Starskiff](https://github.com/thegwchr/Starskiff) (See Post-Install#2) (Thanks to @thegwchr for the [Feixiao](https://github.com/thegwchr/Feixiao))
-- Bluetooth (use [BluetoolFixup](https://github.com/acidanthera/BrcmPatchRAM) and [RealtekBluetoothFirmware](https://github.com/thegwchr/RealtekBluetoothFirmware))
+- Bluetooth (use [BluetoolFixup](https://github.com/acidanthera/BrcmPatchRAM) and [RealtekBluetoothFirmware])(https://github.com/thegwchr/RealtekBluetoothFirmware))
 - Webcam and Microphone
 - iServices (iMessage, FaceTime, iCloud) and OTA updates
 - Ethernet via USB Type-C to Gigabit Ethernet Controller
 - Audio
 - Sleep, Wake, Power Management
+- Touchpad/Trackpad
 
 ## What's not working (or partially)
-- Touchpad/Trackpad (sometimes it stopped working)
+- ~~Touchpad/Trackpad (sometimes it stopped working)~~
 - ~~Audio (WIP)~~
 
 ## Post-Install
@@ -31,16 +32,19 @@ Stable OpenCore configuration build.
 3. **[OPTIONAL]** Download and move [AMD Power Gadget.app](https://github.com/trulyspinach/SMCAMDProcessor/releases/latest) to **Applications** then open. You'll see the security prompt, don't forget to allow it at the **Settings** -> **Privacy & Security**.
 4. **[MANDATORY|TAHOE]** Follow this [guide](https://github.com/Mirone/MyKextInstaller) to restore audio.
 5. **[MANDATORY]** Adjust your timezone from Terminal, type `sudo systemsetup -settimezone Asia/Jakarta` then `Enter`. Change `Asia/Jakarta` to your timezone.
+6. **[MANDATORY]** Download and move [Hackintool](https://github.com/benbaker76/Hackintool) to your Applications folder, then open it. Navigate to the Power tab at the top, and click the **Screwdriver** (🪛) icon in the bottom toolbar.
 
-## WARNING
+## WARNINGS
 1. Please complete the **[MANDATORY]** steps in the **Post-Install** section!
 2. Do not change the shipped AppleALC.kext, otherwise your audio will not work. Wait until I submit the patch to the AppleALC repository.
+3. This repository ships with experimental/CI build kexts, so there might be some issues.
 
 ## Configuration Details
 - **SMBIOS**: `MacBookPro16,2`
 - **Audio Layout ID**: `42` ~~(WIP)~~
 - **Bootloader**: OpenCore
 - **SecureBootModel**: `Disabled`
+- **Target Version**: macOS 15 (Sequoia)
 
 ## Notes
 - Remember to generate your own Serial, Board Serial, and UUID.

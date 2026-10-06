@@ -13,7 +13,7 @@ Stable OpenCore configuration build.
 
 ## What's Working
 - Graphics (See Post-Install#1)
-- Wi-Fi via [Starskiff](https://github.com/thegwchr/Starskiff) (See Post-Install#2) (Thanks to @thegwchr for the [Feixiao](https://github.com/thegwchr/Feixiao))
+- Wi-Fi ~~via [Starskiff](https://github.com/thegwchr/Starskiff) (See Post-Install#2) (Thanks to @thegwchr for the [Feixiao](https://github.com/thegwchr/Feixiao))~~
 - Bluetooth (use [BluetoolFixup](https://github.com/acidanthera/BrcmPatchRAM) and [RealtekBluetoothFirmware])(https://github.com/thegwchr/RealtekBluetoothFirmware))
 - Webcam and Microphone
 - iServices (iMessage, FaceTime, iCloud) and OTA updates
@@ -28,7 +28,7 @@ Stable OpenCore configuration build.
 
 ## Post-Install
 1. **[MANDATORY]** You'll get a gray background with spinning beach ball, go to **Recovery** then follow this [workaround](https://github.com/ChefKissInc/NootedRed/discussions/430) (or [direct](https://github.com/ChefKissInc/NootedRed/issues/235#issuecomment-4567109847)).
-2. **[MANDATORY]** Download and install [Starskiff](https://github.com/thegwchr/Starskiff) then open, go to **Settings** -> **General** -> **Login Items & Extensions** -> Add the **Starskiff** to Open at Login.
+2. ~~**[MANDATORY]** Download and install [Starskiff](https://github.com/thegwchr/Starskiff) then open, go to **Settings** -> **General** -> **Login Items & Extensions** -> Add the **Starskiff** to Open at Login.~~
 3. **[OPTIONAL]** Download and move [AMD Power Gadget.app](https://github.com/DrogaBox/SMCAMDProcessor-personal/releases/latest) to **Applications** then open. You'll see the security prompt, don't forget to allow it at the **Settings** -> **Privacy & Security**.
 4. **[MANDATORY|TAHOE]** Follow this [guide](https://github.com/Mirone/MyKextInstaller) to restore audio.
 5. **[MANDATORY]** Adjust your timezone from Terminal, type `sudo systemsetup -settimezone Asia/Jakarta` then `Enter`. Change `Asia/Jakarta` to your timezone.

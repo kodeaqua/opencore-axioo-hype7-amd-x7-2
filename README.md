@@ -29,7 +29,7 @@ Stable OpenCore configuration build.
 ## Post-Install
 1. **[MANDATORY]** You'll get a gray background with spinning beach ball, go to **Recovery** then follow this [workaround](https://github.com/ChefKissInc/NootedRed/discussions/430) (or [direct](https://github.com/ChefKissInc/NootedRed/issues/235#issuecomment-4567109847)).
 2. **[MANDATORY]** Download and install [Starskiff](https://github.com/thegwchr/Starskiff) then open, go to **Settings** -> **General** -> **Login Items & Extensions** -> Add the **Starskiff** to Open at Login.
-3. **[OPTIONAL]** Download and move [AMD Power Gadget.app](https://github.com/trulyspinach/SMCAMDProcessor/releases/latest) to **Applications** then open. You'll see the security prompt, don't forget to allow it at the **Settings** -> **Privacy & Security**.
+3. **[OPTIONAL]** Download and move [AMD Power Gadget.app](https://github.com/DrogaBox/SMCAMDProcessor-personal/releases/latest) to **Applications** then open. You'll see the security prompt, don't forget to allow it at the **Settings** -> **Privacy & Security**.
 4. **[MANDATORY|TAHOE]** Follow this [guide](https://github.com/Mirone/MyKextInstaller) to restore audio.
 5. **[MANDATORY]** Adjust your timezone from Terminal, type `sudo systemsetup -settimezone Asia/Jakarta` then `Enter`. Change `Asia/Jakarta` to your timezone.
 6. **[MANDATORY]** Download and move [Hackintool](https://github.com/benbaker76/Hackintool) to your Applications folder, then open it. Navigate to the Power tab at the top, and click the **Screwdriver** (🪛) icon in the bottom toolbar.
@@ -38,6 +38,8 @@ Stable OpenCore configuration build.
 1. Please complete the **[MANDATORY]** steps in the **Post-Install** section!
 2. Do not change the shipped AppleALC.kext, otherwise your audio will not work. Wait until I submit the patch to the AppleALC repository.
 3. This repository ships with experimental/CI build kexts, so there might be some issues.
+4. From `SMCAMDProcessor-personal`:
+> Security: -amdpnopchk allows non-root UserClient writes. Use on personal trusted machines only.
 
 ## Configuration Details
 - **SMBIOS**: `MacBookPro16,2`

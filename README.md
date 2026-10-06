@@ -13,8 +13,8 @@ Stable OpenCore configuration build.
 
 ## What's Working
 - Graphics (See Post-Install#1)
-- Wi-Fi ~~via [Starskiff](https://github.com/thegwchr/Starskiff) (See Post-Install#2) (Thanks to @thegwchr for the [Feixiao](https://github.com/thegwchr/Feixiao))~~
-- Bluetooth (use [BluetoolFixup](https://github.com/acidanthera/BrcmPatchRAM) and [RealtekBluetoothFirmware])(https://github.com/thegwchr/RealtekBluetoothFirmware))
+- Wi-Fi
+- Bluetooth
 - Webcam and Microphone
 - iServices (iMessage, FaceTime, iCloud) and OTA updates
 - Ethernet via USB Type-C to Gigabit Ethernet Controller
@@ -23,30 +23,27 @@ Stable OpenCore configuration build.
 - Touchpad/Trackpad
 
 ## What's not working (or partially)
-- ~~Touchpad/Trackpad (sometimes it stopped working)~~
-- ~~Audio (WIP)~~
+- You tell me
 
 ## Post-Install
 1. **[MANDATORY]** You'll get a gray background with spinning beach ball, go to **Recovery** then follow this [workaround](https://github.com/ChefKissInc/NootedRed/discussions/430) (or [direct](https://github.com/ChefKissInc/NootedRed/issues/235#issuecomment-4567109847)).
-2. ~~**[MANDATORY]** Download and install [Starskiff](https://github.com/thegwchr/Starskiff) then open, go to **Settings** -> **General** -> **Login Items & Extensions** -> Add the **Starskiff** to Open at Login.~~
-3. **[OPTIONAL]** Download and move [AMD Power Gadget.app](https://github.com/DrogaBox/SMCAMDProcessor-personal/releases/latest) to **Applications** then open. You'll see the security prompt, don't forget to allow it at the **Settings** -> **Privacy & Security**.
-4. **[MANDATORY|TAHOE]** Follow this [guide](https://github.com/Mirone/MyKextInstaller) to restore audio.
-5. **[MANDATORY]** Adjust your timezone from Terminal, type `sudo systemsetup -settimezone Asia/Jakarta` then `Enter`. Change `Asia/Jakarta` to your timezone.
-6. **[MANDATORY]** Download and move [Hackintool](https://github.com/benbaker76/Hackintool) to your Applications folder, then open it. Navigate to the Power tab at the top, and click the **Screwdriver** (🪛) icon in the bottom toolbar.
+2. **[OPTIONAL]** Download and move [AMD Power Gadget.app](https://github.com/DrogaBox/SMCAMDProcessor-personal/releases/latest) to **Applications** then open. You'll see the security prompt, don't forget to allow it at the **Settings** -> **Privacy & Security**.
+3. **[MANDATORY|TAHOE]** Follow this [guide](https://github.com/Mirone/MyKextInstaller) to restore audio.
+4. **[MANDATORY]** Download and move [Hackintool](https://github.com/benbaker76/Hackintool) to your Applications folder, then open it. Navigate to the Power tab at the top, and click the **Screwdriver** (🪛) icon in the bottom toolbar.
 
 ## WARNINGS
 1. Please complete the **[MANDATORY]** steps in the **Post-Install** section!
-2. Do not change the shipped AppleALC.kext, otherwise your audio will not work. Wait until I submit the patch to the AppleALC repository.
+2. Do not change the shipped AppleALC.kext, otherwise your audio will not work. The PR is [here](https://github.com/acidanthera/AppleALC/pull/966).
 3. This repository ships with experimental/CI build kexts, so there might be some issues.
 4. From `SMCAMDProcessor-personal`:
 > Security: -amdpnopchk allows non-root UserClient writes. Use on personal trusted machines only.
 
 ## Configuration Details
 - **SMBIOS**: `MacBookPro16,2`
-- **Audio Layout ID**: `42` ~~(WIP)~~
+- **Audio Layout ID**: `42`
 - **Bootloader**: OpenCore
 - **SecureBootModel**: `Disabled`
-- **Target Version**: macOS 15 (Sequoia)
+- **Target Version**: macOS 26 (Tahoe)
 
 ## Notes
 - Remember to generate your own Serial, Board Serial, and UUID.
